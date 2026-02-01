@@ -39,5 +39,5 @@ ML Engineer building event-driven systems and pipelines on GCP. Skilled in Pub/S
 
 - 📄 [View My Resume](https://raghav-kochhar.github.io/Raghav-Kochhar/Raghav_Kochhar_Resume.pdf)
 - 🌐 [Visit My Website](https://raghav-kochhar.github.io/Raghav-Kochhar/)
-- 💼 [LinkedIn](https://linkedin.com/in/raghavkochhar07)
+- 💼 [LinkedIn](https://linkedin.com/in/raghavkochhar007)
 - 📧 raghavkochhar007@gmail.com
