@@ -1,0 +1,110 @@
+\documentclass[a4paper,10pt]{article}
+\pdfminorversion=7
+\pdfcompresslevel=9
+\pdfobjcompresslevel=3
+
+\usepackage{enumitem,titlesec}
+\usepackage[
+    hidelinks,
+    pdfauthor={Raghav Kochhar},
+    pdftitle={Raghav Kochhar - Resume},
+    pdfsubject={Software Engineer and ML Engineer Resume},
+    pdfkeywords={Machine Learning, Python, GCP, AWS, PyTorch, TensorFlow}
+]{hyperref}
+\usepackage[margin=1cm]{geometry}
+
+\pagestyle{empty}
+
+\titlespacing*{\section}{0pt}{5pt}{5pt}
+\titleformat{\section}{\Large}{}{0pt}{}[\titlerule]
+
+\setlist[itemize]{topsep=0pt, parsep=0pt}
+\setlist[itemize,1]{leftmargin=0pt, label={}, labelsep=0pt, itemsep=3pt}
+\newlist{dashlist}{itemize}{1}
+\setlist[dashlist]{leftmargin=*, label=--, labelsep=0.5em, itemsep=2pt, topsep=2pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE Raghav Kochhar}\\[1pt]
+    \href{tel:+919910339301}{+91 9910339301} |
+    \href{mailto:raghavkochhar007@gmail.com}{raghavkochhar007@gmail.com} |
+    \href{https://linkedin.com/in/raghavkochhar07}{linkedin.com/in/raghavkochhar07} |
+    \href{https://github.com/Raghav-Kochhar}{github.com/Raghav-Kochhar}
+\end{center}
+
+\section{Summary}
+\begin{itemize}
+    \item ML Engineer building event-driven systems and pipelines on GCP. Skilled in Pub/Sub, Dataflow, Cloud Run, and real-time inference, translating business needs into reliable, cost-efficient ML services.
+\end{itemize}
+
+\section{Education}
+\begin{itemize}
+    \item {\large Vivekananda Institute of Professional Studies -- Technical Campus} \hfill 2021 -- 2025\\[1pt]
+        Bachelor of Technology in Artificial Intelligence and Machine Learning (CGPA: 9.03/10).
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}
+    \item {\large Software Engineering and MLOps Intern, Jaipur Robotics} \hfill August 2025 -- Present
+    \begin{dashlist}
+        \item Engineered stateful Apache Beam/Dataflow pipelines to aggregate sensor streams, implementing complex deduplication logic across adjacent gates to resolve multi-camera overlap.
+        \item Optimized streaming job costs by right-sizing Dataflow workers, cutting compute spend by 50\%.
+        \item Built a Cloud Run service for ONNX door-state inference (model trained from scratch, 98\% accuracy), handling video processing with FFmpeg and session storage in AlloyDB.
+        \item Architected a video-generation platform (FastAPI + Streamlit) that renders timelapse videos from GCS using Cloud Tasks for async processing.
+    \end{dashlist}
+    \item {\large Data Science Intern (Stealth Startup)} \hfill Summer 2024
+    \begin{dashlist}
+        \item Led three production ML systems for traffic analysis, sign language, and emotion classification with 90\%+ accuracy.
+        \item Deployed containerized solutions on AWS, reducing inference latency by 25\%.
+    \end{dashlist}
+\end{itemize}
+
+\section{Projects}
+\begin{itemize}
+    \item {\large \href{https://github.com/Raghav-Kochhar/Sign-Language-Interpreter}{American Sign Language Interpreter}}
+    \begin{dashlist}
+        \item Built a real-time sign language recognition system with EfficientNet and LSTM, achieving 95\% accuracy.
+        \item Deployed the model via a FastAPI backend and Streamlit interface with live webcam inference.
+    \end{dashlist}
+    \item {\large \href{https://github.com/Raghav-Kochhar/Emotion-Detection-Through-Audio}{Speech Emotion Classifier}}
+    \begin{dashlist}
+        \item Developed a seven-class emotion recognition LSTM model trained on 1,200 audio samples.
+        \item Built a FastAPI inference API and Streamlit UI for real-time and batch audio analysis.
+    \end{dashlist}
+    \item {\large \href{https://github.com/Raghav-Kochhar/People-and-Car-Detection-App}{Traffic \& Pedestrian Analyzer}}
+    \begin{dashlist}
+        \item Created a YOLOv8-powered traffic monitoring system achieving 90\% mAP with pedestrian and signal detection.
+        \item Integrated traffic-light color recognition for smart-city planning insights.
+    \end{dashlist}
+    \item {\large Automaton: No-Code ML Workflow Platform}
+    \begin{dashlist}
+        \item Implemented a No-Code ML workflow platform for data preprocessing, training, and tuning.
+        \item Built interactive dashboards for model benchmarking and performance visualization.
+    \end{dashlist}
+\end{itemize}
+
+\section{Research}
+\begin{itemize}
+    \item {\large Publication: Efficient Adaptation of Lightweight LLMs (ICAAI 2025, Springer)}
+    \begin{dashlist}
+        \item Benchmarked Baseline, T-Free, and STELLA on consumer-grade hardware, validating edge feasibility.
+        \item Achieved 75\% embedding reduction with T-Free while maintaining accuracy.
+    \end{dashlist}
+    \item {\large Publication: Health Helix: Connecting You to Better Health (COM-IT-CON 2024)}
+    \begin{dashlist}
+        \item Presented at the International Conference on Progressive Computational Intelligence (Taylor \& Francis Group); architected a unified healthcare platform.
+        \item Designed engagement workflows that reduced clinic no-show rates via automated AI alerts and scheduling integration.
+    \end{dashlist}
+\end{itemize}
+
+\section{Technical Skills}
+\begin{dashlist}
+    \item Languages: Python (uv, ruff, mypy, pytest), SQL, Bash.
+    \item ML and Deep Learning: PyTorch, TensorFlow, ONNX, Scikit-learn.
+    \item Computer Vision and NLP: OpenCV, YOLOv8, FFmpeg.
+    \item Web and APIs: FastAPI, Streamlit, SQLAlchemy, Pydantic.
+    \item Data Engineering: Apache Beam, Pandas, NumPy.
+    \item Cloud and DevOps: GCP, AWS, Azure, Docker.
+\end{dashlist}
+\end{document}
