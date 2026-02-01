@@ -6,25 +6,25 @@ ML Engineer building event-driven systems and pipelines on GCP. Skilled in Pub/S
 
 ## Education
 
-- **Vivekananda Institute of Professional Studies — Technical Campus** (2021 — 2025)
+- Vivekananda Institute of Professional Studies — Technical Campus (2021 — 2025)
 - Bachelor of Technology in Artificial Intelligence and Machine Learning (CGPA: 9.03/10)
 
 ## Experience
 
-- **Software Engineering and MLOps Intern, Jaipur Robotics** (August 2025 — Present)
-- **Data Science Intern, Stealth Startup** (Summer 2024)
+- Software Engineering and MLOps Intern, Jaipur Robotics (August 2025 — Present)
+- Data Science Intern, Stealth Startup (Summer 2024)
 
 ## Projects
 
-- **American Sign Language Interpreter**
-- **Speech Emotion Classifier**
-- **Traffic & Pedestrian Analyzer**
-- **Automaton: No-Code ML Workflow Platform**
+- American Sign Language Interpreter
+- Speech Emotion Classifier
+- Traffic & Pedestrian Analyzer
+- Automaton: No-Code ML Workflow Platform
 
 ## Research
 
-- **Efficient Adaptation of Lightweight LLMs** (ICAAI 2025, Springer)
-- **Health Helix: Connecting You to Better Health** (COM-IT-CON 2024, Taylor & Francis)
+- Efficient Adaptation of Lightweight LLMs (ICAAI 2025, Springer)
+- Health Helix: Connecting You to Better Health (COM-IT-CON 2024, Taylor & Francis)
 
 ## Technical Skills
 
