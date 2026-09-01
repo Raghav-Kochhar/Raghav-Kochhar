@@ -8,8 +8,8 @@
     hidelinks,
     pdfauthor={Raghav Kochhar},
     pdftitle={Raghav Kochhar - Resume},
-    pdfsubject={Software Engineer and ML Engineer Resume},
-    pdfkeywords={Machine Learning, Python, GCP, AWS, PyTorch, TensorFlow}
+    pdfsubject={Artificial Intelligence and Machine Learning Engineer Resume},
+    pdfkeywords={Machine Learning, Python, GCP, PyTorch, TensorFlow, Vertex AI, Dataflow}
 ]{hyperref}
 \usepackage[margin=1cm]{geometry}
 
@@ -30,14 +30,14 @@
     \href{mailto:raghavkochhar007@gmail.com}{raghavkochhar007@gmail.com} ---
     \href{https://linkedin.com/in/raghavkochhar007}{linkedin.com/in/raghavkochhar007} ---
     \href{https://github.com/Raghav-Kochhar}{github.com/Raghav-Kochhar}\\[1pt]
-    \href{tel:+17786529739}{+1 (778) 652-9739} ---
-    Langley, BC, Canada ---
+    \href{tel:+17789553597}{778-955-3597} ---
+    Delta, BC, Canada ---
     Canadian Permanent Resident
 \end{center}
 
 \section{Summary}
 \begin{itemize}
-    \item ML Engineer building event-driven systems, ML pipelines, and LLM-powered applications on GCP. Skilled in Pub/Sub, Dataflow, Cloud Run, and real-time inference, with experience in RAG architectures and Transformers.
+    \item AI/ML Engineer building streaming ML systems on GCP. Built Pub/Sub/Dataflow pipelines and Cloud Run services, reducing streaming costs for Waste-to-Energy.
 \end{itemize}
 
 \section{Education}
@@ -48,17 +48,12 @@
 
 \section{Experience}
 \begin{itemize}
-    \item {\large Software Engineering and MLOps Intern, Jaipur Robotics} \hfill August 2025 -- Present
+    \item {\large Artificial Intelligence and Machine Learning Engineer, Jaipur Robotics} \hfill August 2025 -- Present
     \begin{dashlist}
-        \item Engineered stateful Apache Beam/Dataflow pipelines to aggregate sensor streams, implementing complex deduplication logic across adjacent gates to resolve multi-camera overlap.
-        \item Optimized streaming job costs by right-sizing Dataflow workers, cutting compute spend by 50\%.
-        \item Built a Cloud Run service for ONNX door-state inference (model trained from scratch, 98\% accuracy), handling video processing with FFmpeg and session storage in AlloyDB.
-        \item Architected a video-generation platform (FastAPI + Streamlit) that renders timelapse videos from GCS using Cloud Tasks for async processing.
-    \end{dashlist}
-    \item {\large Data Science Intern (Stealth Startup)} \hfill Summer 2024
-    \begin{dashlist}
-        \item Led three production ML systems for traffic analysis, sign language, and emotion classification with 90\%+ accuracy.
-        \item Deployed containerized solutions on AWS, reducing inference latency by 25\%.
+        \item Streaming and Data: Built a Dataflow pipeline (Apache Beam, Python) that merges sensor streams across cameras and handles duplicate detections; reduced costs with right-sizing and built reliable AlloyDB updates for truck sessions.
+        \item Computer Vision: Built services for image segmentation and alert image processing; contributed to LiDAR volume measurement.
+        \item GenAI and Automation: Built alert visibility tracking and contributed to LLM classification, truck video analysis, material mixing analysis, and automated report generation.
+        \item Platform: Built a video-generation platform (FastAPI + Streamlit, GCS, Cloud Tasks) for timelapse videos and worked with Django data models (AlloyDB) for truck tracking.
     \end{dashlist}
 \end{itemize}
 
@@ -66,18 +61,18 @@
 \begin{itemize}
     \item {\large \href{https://github.com/Raghav-Kochhar/AmericanSignLanguageInterpreter}{American Sign Language Interpreter}}
     \begin{dashlist}
-        \item Built a real-time sign language recognition system with EfficientNet and LSTM, achieving 95\% accuracy.
+        \item Built a real-time sign language recognition system with EfficientNet and LSTM.
         \item Deployed the model via a FastAPI backend and Streamlit interface with live webcam inference.
     \end{dashlist}
     \item {\large \href{https://github.com/Raghav-Kochhar/SpeechEmotionClassifier}{Speech Emotion Classifier}}
     \begin{dashlist}
-        \item Developed a seven-class emotion recognition LSTM model trained on 1,200 audio samples.
+        \item Developed a seven-class emotion recognition LSTM model trained on audio samples.
         \item Built a FastAPI inference API and Streamlit UI for real-time and batch audio analysis.
     \end{dashlist}
     \item {\large \href{https://github.com/Raghav-Kochhar/TrafficPedestrianAnalyzer}{Traffic \& Pedestrian Analyzer}}
     \begin{dashlist}
-        \item Created a YOLOv8-powered traffic monitoring system achieving 90\% mAP with pedestrian and signal detection.
-        \item Integrated traffic-light color recognition for smart-city planning insights.
+        \item Created a YOLOv8-powered traffic monitoring system with pedestrian and signal detection.
+        \item Integrated traffic-light color recognition for smart-city insights.
     \end{dashlist}
     \item {\large Automaton: No-Code ML Workflow Platform}
     \begin{dashlist}
@@ -86,7 +81,7 @@
     \end{dashlist}
 \end{itemize}
 
-\section{Research}
+\section{Research (Under Review, PDF available upon request)}
 \begin{itemize}
     \item {\large Publication: Efficient Adaptation of Lightweight LLMs (ICAAI 2025, Springer)}
     \begin{dashlist}
@@ -104,10 +99,10 @@
 \begin{dashlist}
     \item Languages: Python (uv, ruff, mypy, pytest), SQL, Bash.
     \item ML and Deep Learning: PyTorch, TensorFlow, Hugging Face Transformers, ONNX, Scikit-learn.
-    \item LLMs and GenAI: LangChain, RAG pipelines, Prompt Engineering.
+    \item LLMs and GenAI: LangChain, RAG pipelines, Prompt Engineering, Vertex AI.
     \item Computer Vision and NLP: OpenCV, YOLOv8, FFmpeg.
     \item Web and APIs: FastAPI, Streamlit, SQLAlchemy, Pydantic.
-    \item Data Engineering: Apache Beam, Pandas, NumPy.
-    \item Cloud and DevOps: GCP, AWS, Azure, Docker, Kubernetes, GitHub Actions.
+    \item Data Engineering: Apache Beam, BigQuery, PySpark, Pandas, NumPy.
+    \item Cloud and DevOps: GCP (Vertex AI, Pub/Sub, Dataflow, Cloud Run, GKE), Docker, GitHub Actions, Cloud Build.
 \end{dashlist}
 \end{document}
