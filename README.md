@@ -7,9 +7,9 @@ AI/ML Engineer with B.Tech (CGPA 9.03/10, First Division, 90.3%) building produc
 - Jaipur Robotics (August 2025 -- Present)
   - Artificial Intelligence and Machine Learning Engineer (Contract, part-time), February 2026 -- Present
   - Software Engineering Intern (full-time), August 2025 -- January 2026
-  - Streaming and Data: Apache Beam (Python) pipeline merging multi-camera streams with dedup (3K events/day, 4,800+ truck fleet, 13-min average end-to-end processing) into AlloyDB truck-session state
-  - Computer Vision: image segmentation and alert-image processing (1.6K boxes/day); LiDAR volume measurement (8.6K scans and 55M cubic meters/month)
-  - GenAI and Automation: alert-visibility tracking and LLM-based alert classification across 9 plant sites (3.2K annotation tasks/month, under a minute to complete on average)
+  - Streaming and Data: Apache Beam (Python) pipeline merging multi-camera streams with plate normalization and confidence-ranked dedup (3K events/day, 4,800+ truck fleet, 13-min average end-to-end processing) into AlloyDB truck-session state
+  - Computer Vision: waste-area polygon segmentation and alert-image processing (1.6K boxes/day); LiDAR volume measurement (8.6K scans and 55M cubic meters/month)
+  - GenAI and Automation: Gemini-based alert-visibility tracking (first/last-seen timestamps) and LLM-based alert classification across 9 plant sites (3.2K annotation tasks/month, under a minute to complete on average)
   - Reporting: truck-video and material-mixing analysis (1.3K analyses/day) feeding generated reports
   - Platform: async timelapse-video platform (FastAPI, GCS, Cloud Tasks, Streamlit) attaching video to 99% of sessions; truck-tracking data in Django/AlloyDB
 

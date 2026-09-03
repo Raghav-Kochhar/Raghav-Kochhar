@@ -58,16 +58,19 @@
     \begin{dashlist}
         \item Streaming and Data: Architected an Apache Beam (Python)
             streaming pipeline merging multi-camera streams
-            with dedup (3K events/day, 4,800+ truck fleet,
+            with plate normalization and confidence-ranked dedup
+            (3K events/day, 4,800+ truck fleet,
             13-min average end-to-end processing) into AlloyDB
             truck-session state.
         % TODO: add compute-cost reduction % once confirmed.
-        \item Computer Vision: Engineered image-segmentation and
-            alert-image processing services (1.6K boxes/day);
+        \item Computer Vision: Engineered waste-area polygon
+            segmentation and alert-image processing services
+            (1.6K boxes/day);
             supported LiDAR volume measurement (8.6K scans
             and 55M cubic meters/month).
         % TODO: add FPS/latency, mAP or measurement error if measured.
-        \item GenAI and Automation: Developed alert-visibility tracking
+        \item GenAI and Automation: Developed Gemini-based
+            alert-visibility tracking (first/last-seen timestamps)
             and LLM-based alert classification across 9 plant sites
             (3.2K annotation tasks/month, under a minute to complete
             on average).
@@ -90,7 +93,7 @@
     \item Vivekananda Institute of Professional Studies -
         Technical Campus \hfill 2021 - 2025\\[1pt]
         Bachelor of Technology in Artificial Intelligence and
-        Machine Learning (CGPA: 9.03/10, First Division, 90.3%).
+        Machine Learning (CGPA: 9.03/10, First Division, 90.3\%).
 \end{itemize}
 
 \section{Projects}
