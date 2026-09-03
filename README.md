@@ -1,37 +1,43 @@
 # Raghav Kochhar
 
-AI/ML Engineer building streaming ML systems on GCP. Built Pub/Sub/Dataflow pipelines and Cloud Run services, reducing streaming costs for Waste-to-Energy.
+AI/ML Engineer with B.Tech (CGPA 9.03/10, First Division, 90.3%) building production streaming ML on GCP (Pub/Sub, Dataflow/Beam, Cloud Run, AlloyDB) for waste-to-energy truck monitoring (3K events/day), plus vision and LLM automation.
+
+## Experience
+
+- Jaipur Robotics (August 2025 -- Present)
+  - Artificial Intelligence and Machine Learning Engineer (Contract, part-time), February 2026 -- Present
+  - Software Engineering Intern (full-time), August 2025 -- January 2026
+  - Streaming and Data: Apache Beam (Python) pipeline merging multi-camera streams with dedup (3K events/day, 4,800+ truck fleet, 13-min average end-to-end processing) into AlloyDB truck-session state
+  - Computer Vision: image segmentation and alert-image processing (1.6K boxes/day); LiDAR volume measurement (8.6K scans and 55M cubic meters/month)
+  - GenAI and Automation: alert-visibility tracking and LLM-based alert classification across 9 plant sites (3.2K annotation tasks/month, under a minute to complete on average)
+  - Reporting: truck-video and material-mixing analysis (1.3K analyses/day) feeding generated reports
+  - Platform: async timelapse-video platform (FastAPI, GCS, Cloud Tasks, Streamlit) attaching video to 99% of sessions; truck-tracking data in Django/AlloyDB
 
 ## Education
 
 - Vivekananda Institute of Professional Studies -- Technical Campus (2021 -- 2025)
-- Bachelor of Technology in Artificial Intelligence and Machine Learning (CGPA: 9.03/10)
-
-## Experience
-
-- Artificial Intelligence and Machine Learning Engineer, Jaipur Robotics (August 2025 -- Present)
+- Bachelor of Technology in Artificial Intelligence and Machine Learning (CGPA: 9.03/10, First Division, 90.3%)
 
 ## Projects
 
-- American Sign Language Interpreter
-- Speech Emotion Classifier
-- Traffic & Pedestrian Analyzer
-- Automaton: No-Code ML Workflow Platform
+- American Sign Language Interpreter (EfficientNetV2-S + LSTM, MS-ASL; Streamlit + OpenCV live inference)
+- Speech Emotion Classifier (seven-class LSTM on 40-dim MFCC, 4 corpora, 12K samples; Streamlit UI)
+- Traffic & Pedestrian Analyzer (YOLOv8x, KMeans car-color recognition, gender classification; Streamlit app)
 
-## Research (Under Review, PDF available upon request)
+## Research
 
-- Efficient Adaptation of Lightweight LLMs (ICAAI 2025, Springer) -- Under Review, PDF available upon request
-- Health Helix: Connecting You to Better Health (COM-IT-CON 2024) -- Under Review, PDF available upon request
+- Efficient Adaptation of Lightweight LLMs (ICAAI 2025, Springer) -- First author; accepted; B.Tech Major Project. Benchmarked Baseline, T-Free, STELLA, and Combined on SST-2, MultiNLI, SNLI (single RTX 3060 GPU); T-Free cut embedding parameters 74% with accuracy trade-off, STELLA led at 0.784 SST-2 accuracy
+- Health Helix: Connecting You to Better Health (COM-IT-CON 2024, presented) -- unified healthcare platform with AI alert and scheduling workflows
 
 ## Technical Skills
 
-- Languages: Python (uv, ruff, mypy, pytest), SQL, Bash
-- ML and Deep Learning: PyTorch, TensorFlow, Hugging Face Transformers, ONNX, Scikit-learn
+- Languages: Python (pytest, mypy, ruff, uv), SQL, Bash
+- ML and Deep Learning: PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn, ONNX, Pandas, NumPy
 - LLMs and GenAI: LangChain, RAG pipelines, Prompt Engineering, Vertex AI
-- Computer Vision and NLP: OpenCV, YOLOv8, FFmpeg
-- Web and APIs: FastAPI, Streamlit, SQLAlchemy, Pydantic
-- Data Engineering: Apache Beam, BigQuery, PySpark, Pandas, NumPy
-- Cloud and DevOps: GCP (Vertex AI, Pub/Sub, Dataflow, Cloud Run, GKE), Docker, GitHub Actions, Cloud Build
+- Computer Vision and Video: OpenCV, YOLOv8, FFmpeg
+- Web and APIs: FastAPI, Streamlit, Django, SQLAlchemy, Pydantic
+- Data Engineering: Apache Beam (Dataflow), Pub/Sub, BigQuery, PySpark, AlloyDB
+- Cloud and DevOps: GCP (Cloud Run, GKE, GCS, Cloud Tasks, Cloud Build), Docker, GitHub Actions
 
 ## Links
 

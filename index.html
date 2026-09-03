@@ -371,7 +371,7 @@
                 <h2 class="section-title">Summary</h2>
             </div>
             <p class="summary-text">
-                ML Engineer building event-driven systems and pipelines on GCP. Skilled in Pub/Sub, Dataflow, Cloud Run, and real-time inference, translating business needs into reliable, cost-efficient ML services.
+                AI/ML Engineer with B.Tech (CGPA 9.03/10) building production streaming ML on GCP (Pub/Sub, Dataflow/Beam, Cloud Run, AlloyDB) for waste-to-energy truck monitoring (3K events/day), plus vision and LLM automation.
             </p>
         </section>
 
@@ -386,7 +386,7 @@
                     <h3 class="education-school">Vivekananda Institute of Professional Studies -- Technical Campus</h3>
                     <span class="education-date">2021 -- 2025</span>
                 </div>
-                <p class="education-degree">Bachelor of Technology in Artificial Intelligence and Machine Learning (CGPA: 9.03/10)</p>
+                <p class="education-degree">Bachelor of Technology in Artificial Intelligence and Machine Learning (CGPA: 9.03/10, First Division, 90.3%)</p>
             </div>
         </section>
 
@@ -398,27 +398,16 @@
 
             <div class="item">
                 <div class="item-header">
-                    <h3 class="item-title">Software Engineering and MLOps Intern</h3>
+                    <h3 class="item-title">Jaipur Robotics</h3>
                     <span class="item-meta">August 2025 -- Present</span>
                 </div>
-                <p class="item-subtitle">Jaipur Robotics</p>
+                <p class="item-subtitle">Artificial Intelligence and Machine Learning Engineer (Contract, part-time), February 2026 -- Present; Software Engineering Intern (full-time), August 2025 -- January 2026</p>
                 <ul class="item-bullets">
-                    <li>Engineered stateful Apache Beam/Dataflow pipelines to aggregate sensor streams, implementing complex deduplication logic across adjacent gates to resolve multi-camera overlap</li>
-                    <li>Optimized streaming job costs by right-sizing Dataflow workers, cutting compute spend by 50%</li>
-                    <li>Built a Cloud Run service for ONNX door-state inference (model trained from scratch, 98% accuracy), handling video processing with FFmpeg and session storage in AlloyDB</li>
-                    <li>Architected a video-generation platform (FastAPI + Streamlit) that renders timelapse videos from GCS using Cloud Tasks for async processing</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <h3 class="item-title">Data Science Intern</h3>
-                    <span class="item-meta">Summer 2024</span>
-                </div>
-                <p class="item-subtitle">Stealth Startup</p>
-                <ul class="item-bullets">
-                    <li>Led three production ML systems for traffic analysis, sign language, and emotion classification with 90%+ accuracy</li>
-                    <li>Deployed containerized solutions on AWS, reducing inference latency by 25%</li>
+                    <li>Streaming and Data: Architected an Apache Beam (Python) streaming pipeline merging multi-camera streams with dedup (3K events/day, 4,800+ truck fleet, 13-min average end-to-end processing) into AlloyDB truck-session state</li>
+                    <li>Computer Vision: Engineered image-segmentation and alert-image processing services (1.6K boxes/day); supported LiDAR volume measurement (8.6K scans and 55M cubic meters/month)</li>
+                    <li>GenAI and Automation: Developed alert-visibility tracking and LLM-based alert classification across 9 plant sites (3.2K annotation tasks/month, under a minute to complete on average)</li>
+                    <li>Automated Analytics and Reporting: Automated truck-video and material-mixing analysis (1.3K analyses/day) feeding generated reports, reducing manual review effort</li>
+                    <li>Platform: Shipped an async timelapse-video platform (FastAPI, GCS, Cloud Tasks, Streamlit) attaching video to 99% of sessions; modeled truck-tracking data in Django/AlloyDB</li>
                 </ul>
             </div>
         </section>
@@ -434,8 +423,8 @@
                     <h3 class="item-title"><a href="https://github.com/Raghav-Kochhar/AmericanSignLanguageInterpreter" target="_blank">American Sign Language Interpreter -></a></h3>
                 </div>
                 <ul class="item-bullets">
-                    <li>Built a real-time sign language recognition system with EfficientNet and LSTM, achieving 95% accuracy</li>
-                    <li>Deployed the model via a FastAPI backend and Streamlit interface with live webcam inference</li>
+                    <li>Engineered real-time sign-language recognition with EfficientNetV2-S features and an LSTM head (MS-ASL)</li>
+                    <li>Shipped live webcam and video-upload inference via a Streamlit and OpenCV interface</li>
                 </ul>
             </div>
 
@@ -444,8 +433,8 @@
                     <h3 class="item-title"><a href="https://github.com/Raghav-Kochhar/SpeechEmotionClassifier" target="_blank">Speech Emotion Classifier -></a></h3>
                 </div>
                 <ul class="item-bullets">
-                    <li>Developed a seven-class emotion recognition LSTM model trained on 1,200 audio samples</li>
-                    <li>Built a FastAPI inference API and Streamlit UI for real-time and batch audio analysis</li>
+                    <li>Developed a seven-class LSTM emotion classifier on 40-dim MFCC features across 4 corpora (12K samples)</li>
+                    <li>Shipped a Streamlit UI for real-time and batch audio analysis with confidence-scored predictions</li>
                 </ul>
             </div>
 
@@ -454,18 +443,8 @@
                     <h3 class="item-title"><a href="https://github.com/Raghav-Kochhar/TrafficPedestrianAnalyzer" target="_blank">Traffic & Pedestrian Analyzer -></a></h3>
                 </div>
                 <ul class="item-bullets">
-                    <li>Created a YOLOv8-powered traffic monitoring system achieving 90% mAP with pedestrian and signal detection</li>
-                    <li>Integrated traffic-light color recognition for smart-city planning insights</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <h3 class="item-title">Automaton: No-Code ML Workflow Platform</h3>
-                </div>
-                <ul class="item-bullets">
-                    <li>Implemented a No-Code ML workflow platform for data preprocessing, training, and tuning</li>
-                    <li>Built interactive dashboards for model benchmarking and performance visualization</li>
+                    <li>Created a YOLOv8x traffic-monitoring system with pedestrian detection, KMeans car-color recognition, and gender classification</li>
+                    <li>Deployed vehicle counting and analytics as an interactive Streamlit app</li>
                 </ul>
             </div>
         </section>
@@ -478,12 +457,12 @@
 
             <div class="item">
                 <div class="item-header">
-                    <h3 class="item-title">Efficient Adaptation of Lightweight LLMs</h3>
-                    <span class="item-meta">ICAAI 2025, Springer</span>
+                    <h3 class="item-title">Efficient Adaptation of Lightweight LLMs (B.Tech Major Project)</h3>
+                    <span class="item-meta">ICAAI 2025, Springer - First author; accepted</span>
                 </div>
                 <ul class="item-bullets">
-                    <li>Benchmarked Baseline, T-Free, and STELLA on consumer-grade hardware, validating edge feasibility</li>
-                    <li>Achieved 75% embedding reduction with T-Free while maintaining accuracy</li>
+                    <li>Benchmarked Baseline, T-Free, STELLA, and Combined on SST-2, MultiNLI, and SNLI (single RTX 3060 GPU)</li>
+                    <li>T-Free cut embedding parameters 74% with an accuracy trade-off; STELLA-tuned variant led at 0.784 SST-2 accuracy</li>
                 </ul>
             </div>
 
@@ -494,7 +473,7 @@
                 </div>
                 <ul class="item-bullets">
                     <li>Presented at the International Conference on Progressive Computational Intelligence; architected a unified healthcare platform</li>
-                    <li>Designed engagement workflows that reduced clinic no-show rates via automated AI alerts and scheduling integration</li>
+                    <li>Designed engagement workflows with automated AI alerts and scheduling integration aimed at reducing clinic no-show rates</li>
                 </ul>
             </div>
         </section>
@@ -512,23 +491,27 @@
                 </div>
                 <div class="skill-category">
                     <h4 class="skill-name">ML & Deep Learning</h4>
-                    <p class="skill-items">PyTorch, TensorFlow, ONNX, Scikit-learn</p>
+                    <p class="skill-items">PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn, ONNX, Pandas, NumPy</p>
                 </div>
                 <div class="skill-category">
-                    <h4 class="skill-name">Computer Vision & NLP</h4>
+                    <h4 class="skill-name">LLMs & GenAI</h4>
+                    <p class="skill-items">LangChain, RAG pipelines, Prompt Engineering, Vertex AI</p>
+                </div>
+                <div class="skill-category">
+                    <h4 class="skill-name">Computer Vision & Video</h4>
                     <p class="skill-items">OpenCV, YOLOv8, FFmpeg</p>
                 </div>
                 <div class="skill-category">
                     <h4 class="skill-name">Web & APIs</h4>
-                    <p class="skill-items">FastAPI, Streamlit, SQLAlchemy, Pydantic</p>
+                    <p class="skill-items">FastAPI, Streamlit, Django, SQLAlchemy, Pydantic</p>
                 </div>
                 <div class="skill-category">
                     <h4 class="skill-name">Data Engineering</h4>
-                    <p class="skill-items">Apache Beam, Pandas, NumPy</p>
+                    <p class="skill-items">Apache Beam (Dataflow), Pub/Sub, BigQuery, PySpark, AlloyDB</p>
                 </div>
                 <div class="skill-category">
                     <h4 class="skill-name">Cloud & DevOps</h4>
-                    <p class="skill-items">GCP, AWS, Azure, Docker</p>
+                    <p class="skill-items">GCP (Cloud Run, GKE, GCS, Cloud Tasks, Cloud Build), Docker, GitHub Actions</p>
                 </div>
             </div>
         </section>

@@ -9,7 +9,9 @@
     pdfauthor={Raghav Kochhar},
     pdftitle={Raghav Kochhar - Resume},
     pdfsubject={Artificial Intelligence and Machine Learning Engineer Resume},
-    pdfkeywords={Machine Learning, Python, GCP, PyTorch, TensorFlow, Vertex AI, Dataflow}
+    pdfkeywords={Machine Learning, Python, GCP, PyTorch, TensorFlow,
+      Vertex AI, Dataflow, Apache Beam, AlloyDB, FastAPI,
+      Cloud Run, Computer Vision}
 ]{hyperref}
 \usepackage[margin=1cm]{geometry}
 
@@ -21,88 +23,141 @@
 \setlist[itemize]{topsep=0pt, parsep=0pt}
 \setlist[itemize,1]{leftmargin=0pt, label={}, labelsep=0pt, itemsep=3pt}
 \newlist{dashlist}{itemize}{1}
-\setlist[dashlist]{leftmargin=*, label=--, labelsep=0.5em, itemsep=2pt, topsep=2pt, parsep=0pt}
+\setlist[dashlist]{leftmargin=*, label=-, labelsep=0.5em,
+  itemsep=2pt, topsep=2pt, parsep=0pt}
 
 \begin{document}
 
 \begin{center}
     {\LARGE Raghav Kochhar}\\[1pt]
-    \href{mailto:raghavkochhar007@gmail.com}{raghavkochhar007@gmail.com} ---
-    \href{https://linkedin.com/in/raghavkochhar007}{linkedin.com/in/raghavkochhar007} ---
+    \href{mailto:raghavkochhar007@gmail.com}{raghavkochhar007@gmail.com} -
+    \href{https://linkedin.com/in/raghavkochhar007}{linkedin.com/in/raghavkochhar007} -
     \href{https://github.com/Raghav-Kochhar}{github.com/Raghav-Kochhar}\\[1pt]
-    \href{tel:+17789553597}{778-955-3597} ---
-    Delta, BC, Canada ---
+    \href{tel:+17789553597}{778-955-3597} -
+    Delta, BC, Canada -
     Canadian Permanent Resident
 \end{center}
 
 \section{Summary}
 \begin{itemize}
-    \item AI/ML Engineer building streaming ML systems on GCP. Built Pub/Sub/Dataflow pipelines and Cloud Run services, reducing streaming costs for Waste-to-Energy.
-\end{itemize}
-
-\section{Education}
-\begin{itemize}
-    \item {\large Vivekananda Institute of Professional Studies -- Technical Campus} \hfill 2021 -- 2025\\[1pt]
-        Bachelor of Technology in Artificial Intelligence and Machine Learning (CGPA: 9.03/10).
+    \item AI/ML Engineer with B.Tech (CGPA 9.03/10) building
+        production streaming ML on GCP (Pub/Sub, Dataflow/Beam,
+        Cloud Run, AlloyDB) for waste-to-energy truck monitoring
+        (3K events/day), plus vision and LLM automation.
 \end{itemize}
 
 \section{Experience}
 \begin{itemize}
-    \item {\large Artificial Intelligence and Machine Learning Engineer, Jaipur Robotics} \hfill August 2025 -- Present
+    \item Jaipur Robotics \hfill August 2025 - Present
     \begin{dashlist}
-        \item Streaming and Data: Built a Dataflow pipeline (Apache Beam, Python) that merges sensor streams across cameras and handles duplicate detections; reduced costs with right-sizing and built reliable AlloyDB updates for truck sessions.
-        \item Computer Vision: Built services for image segmentation and alert image processing; contributed to LiDAR volume measurement.
-        \item GenAI and Automation: Built alert visibility tracking and contributed to LLM classification, truck video analysis, material mixing analysis, and automated report generation.
-        \item Platform: Built a video-generation platform (FastAPI + Streamlit, GCS, Cloud Tasks) for timelapse videos and worked with Django data models (AlloyDB) for truck tracking.
+        \item Artificial Intelligence and Machine Learning Engineer
+            (Contract, part-time), February 2026 - Present;
+            Software Engineering Intern (full-time), August 2025
+            - January 2026. Continuous scope across both terms.
     \end{dashlist}
+    \begin{dashlist}
+        \item Streaming and Data: Architected an Apache Beam (Python)
+            streaming pipeline merging multi-camera streams
+            with dedup (3K events/day, 4,800+ truck fleet,
+            13-min average end-to-end processing) into AlloyDB
+            truck-session state.
+        % TODO: add compute-cost reduction % once confirmed.
+        \item Computer Vision: Engineered image-segmentation and
+            alert-image processing services (1.6K boxes/day);
+            supported LiDAR volume measurement (8.6K scans
+            and 55M cubic meters/month).
+        % TODO: add FPS/latency, mAP or measurement error if measured.
+        \item GenAI and Automation: Developed alert-visibility tracking
+            and LLM-based alert classification across 9 plant sites
+            (3.2K annotation tasks/month, under a minute to complete
+            on average).
+        % TODO: add precision/recall if measured.
+        \item Automated Analytics and Reporting: Automated truck-video
+            and material-mixing analysis (1.3K analyses/day) feeding
+            generated reports, reducing manual review effort.
+        % TODO: add videos/reports per day or hrs-to-mins saved.
+        \item Platform: Shipped an async timelapse-video platform
+            (FastAPI, GCS, Cloud Tasks, Streamlit) attaching video
+            to 99\% of sessions; modeled truck-tracking data in
+            Django/AlloyDB.
+        % TODO: add concurrent jobs, job-drop rate, or p95
+        % render latency.
+    \end{dashlist}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}
+    \item Vivekananda Institute of Professional Studies -
+        Technical Campus \hfill 2021 - 2025\\[1pt]
+        Bachelor of Technology in Artificial Intelligence and
+        Machine Learning (CGPA: 9.03/10, First Division, 90.3%).
 \end{itemize}
 
 \section{Projects}
 \begin{itemize}
-    \item {\large \href{https://github.com/Raghav-Kochhar/AmericanSignLanguageInterpreter}{American Sign Language Interpreter}}
+    \item \href{https://github.com/Raghav-Kochhar/AmericanSignLanguageInterpreter}{American Sign Language Interpreter}
     \begin{dashlist}
-        \item Built a real-time sign language recognition system with EfficientNet and LSTM.
-        \item Deployed the model via a FastAPI backend and Streamlit interface with live webcam inference.
+        \item Engineered real-time sign-language recognition with
+            EfficientNetV2-S features and an LSTM head (MS-ASL).
+        \item Shipped live webcam and video-upload inference via
+            a Streamlit and OpenCV interface.
     \end{dashlist}
-    \item {\large \href{https://github.com/Raghav-Kochhar/SpeechEmotionClassifier}{Speech Emotion Classifier}}
+    \item \href{https://github.com/Raghav-Kochhar/SpeechEmotionClassifier}{Speech Emotion Classifier}
     \begin{dashlist}
-        \item Developed a seven-class emotion recognition LSTM model trained on audio samples.
-        \item Built a FastAPI inference API and Streamlit UI for real-time and batch audio analysis.
+        \item Developed a seven-class LSTM emotion classifier on
+            40-dim MFCC features across 4 corpora (12K samples).
+        \item Shipped a Streamlit UI for real-time and batch audio
+            analysis with confidence-scored predictions.
     \end{dashlist}
-    \item {\large \href{https://github.com/Raghav-Kochhar/TrafficPedestrianAnalyzer}{Traffic \& Pedestrian Analyzer}}
+    \item \href{https://github.com/Raghav-Kochhar/TrafficPedestrianAnalyzer}{Traffic \& Pedestrian Analyzer}
     \begin{dashlist}
-        \item Created a YOLOv8-powered traffic monitoring system with pedestrian and signal detection.
-        \item Integrated traffic-light color recognition for smart-city insights.
-    \end{dashlist}
-    \item {\large Automaton: No-Code ML Workflow Platform}
-    \begin{dashlist}
-        \item Implemented a No-Code ML workflow platform for data preprocessing, training, and tuning.
-        \item Built interactive dashboards for model benchmarking and performance visualization.
+        \item Created a YOLOv8x traffic-monitoring system with
+            pedestrian detection, KMeans car-color recognition,
+            and gender classification.
+        \item Deployed vehicle counting and analytics as an
+            interactive Streamlit app.
     \end{dashlist}
 \end{itemize}
 
-\section{Research (Under Review, PDF available upon request)}
+\section{Research}
 \begin{itemize}
-    \item {\large Publication: Efficient Adaptation of Lightweight LLMs (ICAAI 2025, Springer)}
+    \item Efficient Adaptation of Lightweight LLMs
+        (ICAAI 2025, Springer) - First author; accepted;
+        B.Tech Major Project
     \begin{dashlist}
-        \item Benchmarked Baseline, T-Free, and STELLA on consumer-grade hardware, validating edge feasibility.
-        \item Achieved 75\% embedding reduction with T-Free while maintaining accuracy.
+        \item Benchmarked Baseline, T-Free, STELLA, and Combined
+            on SST-2, MultiNLI, and SNLI (single RTX 3060 GPU).
+        \item T-Free cut embedding parameters 74\% with an accuracy
+            trade-off; STELLA-tuned variant led at 0.784 SST-2
+            accuracy.
     \end{dashlist}
-    \item {\large Publication: Health Helix: Connecting You to Better Health (COM-IT-CON 2024)}
+    \item Health Helix: Connecting You to Better Health
+        (COM-IT-CON 2024)
     \begin{dashlist}
-        \item Presented at the International Conference on Progressive Computational Intelligence (Taylor \& Francis Group); architected a unified healthcare platform.
-        \item Designed engagement workflows that reduced clinic no-show rates via automated AI alerts and scheduling integration.
+        \item Presented at the International Conference on Progressive
+            Computational Intelligence (Taylor \& Francis Group);
+            architected a unified healthcare platform.
+        \item Designed engagement workflows with automated AI alerts
+            and scheduling integration aimed at reducing clinic
+            no-show rates.
+        % TODO: add measured or projected reduction %; if only
+        % proposed, keep "aimed at reducing".
     \end{dashlist}
 \end{itemize}
 
 \section{Technical Skills}
 \begin{dashlist}
-    \item Languages: Python (uv, ruff, mypy, pytest), SQL, Bash.
-    \item ML and Deep Learning: PyTorch, TensorFlow, Hugging Face Transformers, ONNX, Scikit-learn.
-    \item LLMs and GenAI: LangChain, RAG pipelines, Prompt Engineering, Vertex AI.
-    \item Computer Vision and NLP: OpenCV, YOLOv8, FFmpeg.
-    \item Web and APIs: FastAPI, Streamlit, SQLAlchemy, Pydantic.
-    \item Data Engineering: Apache Beam, BigQuery, PySpark, Pandas, NumPy.
-    \item Cloud and DevOps: GCP (Vertex AI, Pub/Sub, Dataflow, Cloud Run, GKE), Docker, GitHub Actions, Cloud Build.
+    \item Languages: Python (pytest, mypy, ruff, uv), SQL, Bash.
+    \item ML and Deep Learning: PyTorch, TensorFlow,
+        Hugging Face Transformers, Scikit-learn, ONNX, Pandas, NumPy.
+    \item LLMs and GenAI: LangChain, RAG pipelines,
+        Prompt Engineering, Vertex AI.
+    \item Computer Vision and Video: OpenCV, YOLOv8, FFmpeg.
+    \item Web and APIs: FastAPI, Streamlit, Django, SQLAlchemy,
+        Pydantic.
+    \item Data Engineering: Apache Beam (Dataflow), Pub/Sub,
+        BigQuery, PySpark, AlloyDB.
+    \item Cloud and DevOps: GCP (Cloud Run, GKE, GCS, Cloud Tasks,
+        Cloud Build), Docker, GitHub Actions.
 \end{dashlist}
 \end{document}
