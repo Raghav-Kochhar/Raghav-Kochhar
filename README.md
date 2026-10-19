@@ -1,50 +1,31 @@
-# Raghav Kochhar
+# Hey, I'm Raghav 👋
 
-AI/ML Engineer building production ML on streaming data (GCP) for waste-to-energy truck monitoring. Canadian Permanent Resident based in Delta, BC.
+I'm an AI/ML engineer based in Delta, BC, Canada. I build ML systems that run on real, messy, streaming data, mostly on GCP, plus the computer vision and LLM tooling around them.
 
-## Summary
+## What I do day to day
 
-AI/ML Engineer with B.Tech in AI/ML building production ML on streaming data (Pub/Sub, Dataflow/Beam, Cloud Run, AlloyDB) for waste-to-energy truck monitoring (3K events/day), plus vision and LLM automation.
+At **Jaipur Robotics**, I work on monitoring waste-to-energy trucks:
 
-## Experience
-
-- Artificial Intelligence and Machine Learning Engineer, Jaipur Robotics (August 2025 -- Present)
-  - Streaming and Data: Apache Beam (Python) pipeline merging detection streams with plate normalization and confidence-ranked dedup (3K events/day, 4,800+ truck fleet, 13-min average end-to-end processing) into AlloyDB truck-session state
-  - Computer Vision: waste-area polygon segmentation and alert-image processing (1.6K boxes/day); LiDAR volume measurement (8.6K scans and 55M cubic meters/month)
-  - GenAI and Automation: Gemini-based alert-visibility tracking (first/last-seen timestamps) and LLM-based alert classification across 9 plant sites (3.2K annotation tasks/month, under a minute to complete on average)
-  - Reporting: truck-video and material-mixing analysis (1.3K analyses/day) feeding generated reports
-  - Platform: async timelapse-video platform (FastAPI, GCS, Cloud Tasks, Streamlit) attaching video to 99% of sessions; truck-tracking data in Django/AlloyDB
-
-## Education
-
-- Vivekananda Institute of Professional Studies -- Technical Campus (2021 -- 2025)
-- Bachelor of Technology in Artificial Intelligence and Machine Learning (CGPA: 9.03/10)
+- 🚛 **Streaming pipeline:** an Apache Beam pipeline that merges detection streams and dedups them into truck-session state (3K events/day, 4,800+ truck fleet, ~13 min end to end).
+- 👁️ **Computer vision:** waste-area segmentation and alert-image processing, plus LiDAR volume measurement (8.6K scans/month).
+- 🤖 **LLM automation:** Gemini-based alert tracking and LLM alert classification across 9 plant sites (3.2K tasks/month, about a minute each).
+- 🎥 **Video platform:** an async timelapse-video service (FastAPI, Cloud Tasks, GCS) that attaches video to 99% of sessions.
 
 ## Research
 
-- Efficient Adaptation of Lightweight LLMs (ICAAI 2025, Springer) -- First author; accepted; B.Tech Major Project. Benchmarked Baseline, T-Free, STELLA, and Combined on SST-2, MultiNLI, SNLI (single RTX 3060 GPU); T-Free cut embedding parameters 74% with accuracy trade-off, STELLA led at 0.784 SST-2 accuracy
-- Health Helix: Connecting You to Better Health (COM-IT-CON 2024, presented) -- unified healthcare platform with AI alert and scheduling workflows
+- **Efficient Adaptation of Lightweight LLMs** (ICAAI 2025, Springer). First author. We compared T-Free and STELLA on SST-2, MultiNLI and SNLI using a single RTX 3060. T-Free cut embedding parameters by 74%, and a STELLA-tuned variant hit 0.784 on SST-2. [Paper link]
 
-## Projects
+## Side projects
 
-- American Sign Language Interpreter (EfficientNetV2-S + LSTM, MS-ASL; Streamlit + OpenCV live inference)
-- Speech Emotion Classifier (seven-class LSTM on 40-dim MFCC, 4 corpora, 12K samples; Streamlit UI)
-- Traffic & Pedestrian Analyzer (YOLOv8x, pedestrian detection, KMeans car-color recognition; Streamlit app)
-- Automaton: No-Code ML Workflow Platform (preprocessing, training, tuning, benchmark visualization)
+- [**American Sign Language Interpreter**](https://github.com/Raghav-Kochhar/AmericanSignLanguageInterpreter): real-time sign recognition (EfficientNetV2-S + LSTM)
+- [**Traffic & Pedestrian Analyzer**](https://github.com/Raghav-Kochhar/TrafficPedestrianAnalyzer): YOLOv8x vehicle counting and pedestrian detection
+- [**Speech Emotion Classifier**](https://github.com/Raghav-Kochhar/SpeechEmotionClassifier): LSTM on MFCC features across 4 corpora
+- [**taurus**](https://github.com/Raghav-Kochhar/taurus): a torrent client written in Rust
 
-## Technical Skills
+## What I use
 
-- Languages: Python (pytest, mypy, ruff, uv), SQL, Bash
-- ML and Deep Learning: PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn, ONNX, Pandas, NumPy
-- LLMs and GenAI: LangChain, RAG pipelines, Prompt Engineering, Vertex AI
-- Computer Vision and Video: OpenCV, YOLOv8, FFmpeg
-- Web and APIs: FastAPI, Streamlit, Django, SQLAlchemy, Pydantic
-- Data Engineering: Apache Beam (Dataflow), Pub/Sub, BigQuery, PySpark, AlloyDB
-- Cloud and DevOps: GCP (Cloud Run, GKE, GCS, Cloud Tasks, Cloud Build), Docker, GitHub Actions
+Python · PyTorch · Apache Beam · FastAPI · GCP (Cloud Run, Pub/Sub, AlloyDB) · OpenCV · LangChain · Docker
 
-## Links
+## Say hi
 
-- [View My Resume](https://raghav-kochhar.github.io/Raghav-Kochhar/Raghav_Kochhar_Resume.pdf)
-- [Visit My Website](https://raghav-kochhar.github.io/Raghav-Kochhar/)
-- [LinkedIn](https://linkedin.com/in/raghavkochhar007)
-- raghavkochhar007@gmail.com
+📫 raghavkochhar007@gmail.com · [LinkedIn](https://www.linkedin.com/in/raghavkochhar007) · [Resume](https://raghav-kochhar.github.io/Raghav-Kochhar/Raghav_Kochhar_Resume.pdf)
