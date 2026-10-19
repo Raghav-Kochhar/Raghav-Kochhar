@@ -13,7 +13,7 @@ At **Jaipur Robotics**, I work on monitoring waste-to-energy trucks:
 
 ## Research
 
-- **Efficient Adaptation of Lightweight LLMs** (ICAAI 2025, Springer). First author. We compared T-Free and STELLA on SST-2, MultiNLI and SNLI using a single RTX 3060. T-Free cut embedding parameters by 74%, and a STELLA-tuned variant hit 0.784 on SST-2. [Paper link]
+- **Efficient Adaptation of Lightweight LLMs** (ICAAI 2025, Springer). First author. We compared T-Free and STELLA on SST-2, MultiNLI and SNLI using a single RTX 3060. T-Free cut embedding parameters by 74%, and a STELLA-tuned variant hit 0.784 on SST-2.
 
 ## Side projects
 
